@@ -1,0 +1,95 @@
+# 70 Popular Websites in India — WebCarbon Research Dataset
+# Format: URL | Category
+# Lines starting with # are comments and will be ignored
+
+# Search & Productivity
+https://www.google.co.in|Search & Productivity
+https://www.youtube.com|Search & Productivity
+https://www.gmail.com|Search & Productivity
+https://docs.google.com|Search & Productivity
+https://www.wikipedia.org|Search & Productivity
+
+# Social Media
+https://www.facebook.com|Social Media
+https://www.instagram.com|Social Media
+https://www.twitter.com|Social Media
+https://www.linkedin.com|Social Media
+https://www.whatsapp.com|Social Media
+https://www.telegram.org|Social Media
+https://sharechat.com|Social Media
+https://www.reddit.com|Social Media
+
+# E-Commerce
+https://www.amazon.in|E-Commerce
+https://www.flipkart.com|E-Commerce
+https://www.myntra.com|E-Commerce
+https://www.meesho.com|E-Commerce
+https://www.snapdeal.com|E-Commerce
+https://www.nykaa.com|E-Commerce
+https://www.tatacliq.com|E-Commerce
+https://www.ajio.com|E-Commerce
+https://www.shopsy.in|E-Commerce
+https://www.bigbasket.com|E-Commerce
+
+# Food & Delivery
+https://www.swiggy.com|Food & Delivery
+https://www.zomato.com|Food & Delivery
+https://www.blinkit.com|Food & Delivery
+https://www.jiomart.com|Food & Delivery
+https://www.dunzo.com|Food & Delivery
+
+# Travel & Transport
+https://www.irctc.co.in|Travel & Transport
+https://www.makemytrip.com|Travel & Transport
+https://www.goibibo.com|Travel & Transport
+https://www.cleartrip.com|Travel & Transport
+https://www.yatra.com|Travel & Transport
+https://www.easemytrip.com|Travel & Transport
+https://www.ixigo.com|Travel & Transport
+
+# News & Media
+https://timesofindia.indiatimes.com|News & Media
+https://www.ndtv.com|News & Media
+https://www.hindustantimes.com|News & Media
+https://www.thehindu.com|News & Media
+https://www.indiatoday.in|News & Media
+https://www.aajtak.in|News & Media
+https://www.news18.com|News & Media
+https://www.deccanherald.com|News & Media
+
+# Banking & Finance
+https://www.hdfcbank.com|Banking & Finance
+https://www.icicibank.com|Banking & Finance
+https://retail.onlinesbi.sbi|Banking & Finance
+https://www.axisbank.com|Banking & Finance
+https://www.kotakbank.com|Banking & Finance
+https://www.paytm.com|Banking & Finance
+https://www.phonepe.com|Banking & Finance
+https://groww.in|Banking & Finance
+
+# OTT & Entertainment
+https://www.hotstar.com|OTT & Entertainment
+https://www.sonyliv.com|OTT & Entertainment
+https://www.zee5.com|OTT & Entertainment
+https://www.jiocinema.com|OTT & Entertainment
+https://www.cricbuzz.com|OTT & Entertainment
+https://www.espncricinfo.com|OTT & Entertainment
+
+# Education
+https://byjus.com|Education
+https://unacademy.com|Education
+https://www.vedantu.com|Education
+https://www.coursera.org|Education
+https://www.udemy.com|Education
+https://www.khanacademy.org|Education
+
+# Government
+https://www.india.gov.in|Government
+https://uidai.gov.in|Government
+https://www.incometax.gov.in|Government
+https://www.gst.gov.in|Government
+https://www.digilocker.gov.in|Government
+
+# Jobs & Real Estate
+https://www.naukri.com|Jobs & Real Estate
+https://www.99acres.com|Jobs & Real Estate

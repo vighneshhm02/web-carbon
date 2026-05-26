@@ -16,10 +16,15 @@ export const scanURL = async (req, res, next) => {
       return res.status(400).json({ error: 'URL is required' });
     }
 
+    let parsed;
     try {
-      new URL(url);
+      parsed = new URL(url);
     } catch (error) {
       return res.status(400).json({ error: 'Invalid URL format' });
+    }
+
+    if (!['http:', 'https:'].includes(parsed.protocol)) {
+      return res.status(400).json({ error: 'Only http and https URLs are supported' });
     }
 
     const metrics = await crawlURL(url);
@@ -29,6 +34,7 @@ export const scanURL = async (req, res, next) => {
       co2Data = await fetchCarbonData(url);
       metrics.isGreenHosting = co2Data.isGreenHosting;
     } catch (error) {
+      console.warn(`Website Carbon API failed for ${url} — using formula fallback:`, error.message);
       co2Data = estimateCO2(metrics);
     }
 

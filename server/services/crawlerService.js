@@ -10,7 +10,6 @@ export const crawlURL = async (url) => {
     });
 
     const page = await browser.newPage();
-    page.setDefaultNavigationTimeout(30000);
 
     const client = await page.createCDPSession();
     await client.send('Network.enable');
@@ -58,11 +57,13 @@ export const crawlURL = async (url) => {
 
       try {
         const responseHostname = new URL(responseURL).hostname;
-        if (responseURL.endsWith('.js') && responseHostname !== targetHostname) {
+        const isJS = mimeType.includes('javascript') || responseURL.split('?')[0].endsWith('.js');
+        if (isJS && responseHostname !== targetHostname) {
           thirdPartyScripts += 1;
         }
       } catch (error) {
-        if (responseURL.endsWith('.js')) {
+        const isJS = mimeType.includes('javascript') || responseURL.split('?')[0].endsWith('.js');
+        if (isJS) {
           thirdPartyScripts += 1;
         }
       }

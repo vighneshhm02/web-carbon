@@ -11,12 +11,14 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const storageMode = getStorageMode();
 
-app.use(cors({ origin: 'http://localhost:5173' }));
+const allowedOrigin = process.env.CORS_ORIGIN || 'http://localhost:5173';
+app.use(cors({ origin: allowedOrigin }));
 app.use(express.json());
 
 app.use('/api', carbonRoutes);
 
 app.use((err, req, res, next) => {
+  console.error(`[${req.method}] ${req.path}`, err);
   res.status(500).json({ error: err.message });
 });
 

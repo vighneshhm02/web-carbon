@@ -5,7 +5,7 @@ export const estimateCO2 = (metrics) => {
 
   return {
     grams: parseFloat(adjusted.toFixed(4)),
-    gramsRenewable: parseFloat((co2Grams * 0.18).toFixed(4)),
+    gramsRenewable: metrics.isGreenHosting ? parseFloat((co2Grams * 0.18).toFixed(4)) : 0,
     isGreenHosting: metrics.isGreenHosting || false,
     source: 'formula'
   };

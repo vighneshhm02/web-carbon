@@ -17,29 +17,17 @@ const withDefaults = (result) => {
 };
 
 const createInMemory = async (result) => {
-  try {
-    const saved = withDefaults(result);
-    memoryStore.unshift(saved);
-    return saved;
-  } catch (error) {
-    throw error;
-  }
+  const saved = withDefaults(result);
+  memoryStore.unshift(saved);
+  return saved;
 };
 
 const getRecentInMemory = async (limit) => {
-  try {
-    return memoryStore.slice(0, limit);
-  } catch (error) {
-    throw error;
-  }
+  return memoryStore.slice(0, limit);
 };
 
 const getByIdInMemory = async (id) => {
-  try {
-    return memoryStore.find((item) => item._id === id) || null;
-  } catch (error) {
-    throw error;
-  }
+  return memoryStore.find((item) => item._id === id) || null;
 };
 
 export const createScanResult = async (result) => {
